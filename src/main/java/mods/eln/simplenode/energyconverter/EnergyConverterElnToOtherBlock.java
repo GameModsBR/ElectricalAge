@@ -24,6 +24,7 @@ public class EnergyConverterElnToOtherBlock extends SimpleNodeBlock {
 		super(Material.rock);
 		this.descriptor = descriptor;
 		setDescriptor(descriptor);
+		setHardness(1.5f);
 	}
 
 	@Override
