@@ -48,9 +48,10 @@ public class WirelessUtils {
 			}
 			
 			double bestScore;
-			Object best = null;
+			Object best;
 			while (!spots.isEmpty() || !txs.isEmpty()) {
 				bestScore = Double.MAX_VALUE;
+				best = null;
 				for (IWirelessSignalSpot spot : spots) {
 					double temp = spot.getCoordonate().trueDistanceTo(from.getCoordonate());
 					if (temp < bestScore) {
